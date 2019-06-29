@@ -47,7 +47,7 @@ endif
 # Default settings (silent release build).
 config ?= release
 arch ?= native
-tune ?= generic
+tune ?= native
 cpu ?= $(arch)
 fpu ?=
 bits ?= $(shell getconf LONG_BIT)
