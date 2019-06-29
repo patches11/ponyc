@@ -345,7 +345,7 @@ static bool link_exe(compile_t* c, ast_t* program,
     && target_is_x86(c->opt->triple)) ? "-mcx16" : "";
   const char* fuseld = target_is_linux(c->opt->triple) ? "-fuse-ld=gold" : "";
   const char* ldl = target_is_linux(c->opt->triple) ? "-ldl" : "";
-  const char* atomic = target_is_linux(c->opt->triple) ? "-latomic -marm -march=armv6 -mfpu=vfp -mfloat-abi=hard" : "";
+  const char* atomic = target_is_linux(c->opt->triple) ? "-latomic" : "";
   const char* staticbin = c->opt->staticbin ? "-static" : "";
   const char* dtrace_args =
 #if defined(PLATFORM_IS_BSD) && defined(USE_DYNAMIC_TRACE)
