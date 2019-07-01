@@ -11,4 +11,28 @@ mrc
 
 0x00017bfc
 
-0x17bfc mrc    15, 0, r3, cr9, cr14, {0}                                                                                                                                                                                                 │
+0x17bfc mrc    15, 0, r3, cr9, cr14, {0} 
+
+except_try_catch.ll
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+'armv6' is not a recognized processor for this target (ignoring processor)
+stdfd.c
+                                      │

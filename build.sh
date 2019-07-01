@@ -2,4 +2,4 @@ sudo apt install make gcc g++ git zlib1g-dev libncurses5-dev libssl-dev llvm-3.9
 
 export LLVM_CONFIG=/usr/lib/llvm-3.9/bin/llvm-config
 
-make default_pic=true arch=armv6 tune=arm6 fpu=vfp
+make default_pic=true arch=armv6zk tune=arm6 fpu=vfp
