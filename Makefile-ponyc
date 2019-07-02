@@ -109,7 +109,7 @@ endif
 
 LIB_EXT ?= a
 BUILD_FLAGS = -march=$(arch) -mtune=$(tune) -Werror -Wconversion \
-  -Wno-sign-conversion -Wextra -Wall -mfloat-abi=soft
+  -Wno-sign-conversion -Wextra -Wall -mfloat-abi=softfp
 LINKER_FLAGS = -march=$(arch) -mtune=$(tune) $(LDFLAGS)
 AR_FLAGS ?= rcs
 ALL_CFLAGS = -std=gnu11 -fexceptions \
