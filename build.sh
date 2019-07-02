@@ -9,4 +9,4 @@ fi
 
 export LLVM_CONFIG=/usr/lib/llvm-3.9/bin/llvm-config
 
-make default_pic=true arch=armv6zk cpu=arm1176jzf-s tune=arm6 fpu=vfp verbose=1
+make default_pic=true arch=armv6 cpu=arm1176jzf-s tune=arm6 fpu=vfp verbose=1
