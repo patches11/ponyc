@@ -120,7 +120,7 @@ ALL_CFLAGS = -std=gnu11 -fexceptions \
   -DPONY_VERSION_STR=\"$(version_str)\" \
   -D_FILE_OFFSET_BITS=64
 ALL_CXXFLAGS = -std=gnu++11 -fno-rtti
-LL_FLAGS = -mcpu=$(cpu)-neon
+LL_FLAGS = -mcpu=$(cpu) -mattr=-neon
 
 # Determine pointer size in bits.
 BITS := $(bits)
