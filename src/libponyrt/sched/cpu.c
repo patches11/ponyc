@@ -373,7 +373,7 @@ uint64_t ponyint_cpu_tick()
 # if defined(__APPLE__)
   return mach_absolute_time();
 # else
-#   if defined ARMV6
+#   if defined ARMV7
   // V6 is the earliest arch that has a standard cyclecount
   uint32_t pmccntr;
   uint32_t pmuseren;
