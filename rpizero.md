@@ -36,3 +36,4 @@ except_try_catch.ll
 'armv6' is not a recognized processor for this target (ignoring processor)
 stdfd.c
                                       │
+https://gcc.gnu.org/onlinedocs/gcc-6.3.0/gcc/ARM-Options.html
