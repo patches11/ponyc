@@ -402,17 +402,17 @@ uint64_t ponyint_cpu_tick()
   uint32_t pmcntenset;
 
   // Read the user mode perf monitor counter access permissions.
-  asm volatile ("mrc p15, 0, %0, c15, c9, 0" : "=r" (pmuseren));
+  asm volatile ("mrc p15, 0, <Rd>, c15, c9, 0" : "=r" (pmuseren));
 
   // Allows reading perfmon counters for user mode code.
   if(pmuseren & 1)
   {
-    asm volatile ("mrc p15, 0, %0, c15, c12, 0 " : "=r" (pmcntenset));
+    asm volatile ("mrc p15, 0, <Rd>, c15, c12, 0 " : "=r" (pmcntenset));
 
     // Is it counting?
     if(pmcntenset & 1)
     {
-      asm volatile ("mrc p15, 0, %0, c15, c12, 1" : "=r" (pmccntr));
+      asm volatile ("mrc p15, 0, <Rd>, c15, c12, 1" : "=r" (pmccntr));
 
       if ((pmcntenset >> 3) & 1) {
         // The counter is set up to count every 64th cycle
