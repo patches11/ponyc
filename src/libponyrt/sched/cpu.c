@@ -395,8 +395,7 @@ uint64_t ponyint_cpu_tick()
       return pmccntr << 6;
     }
   }
-# else
-#   if defined ARMV6
+#   elif defined ARMV6
   // V6 is the earliest arch that has a standard cyclecount
   uint32_t pmccntr;
   uint32_t pmuseren;
