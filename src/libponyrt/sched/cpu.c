@@ -412,7 +412,7 @@ uint64_t ponyint_cpu_tick()
     // Is it counting?
     if(pmcntenset & 1)
     {
-      asm volatile ("mrc p15, 0, %0, c9, c13, 0" : "=r" (pmccntr));
+      asm volatile ("mrc p15, 0, %0, c15, c12, 1" : "=r" (pmccntr));
 
       if ((pmcntenset >> 3) & 1) {
         // The counter is set up to count every 64th cycle
